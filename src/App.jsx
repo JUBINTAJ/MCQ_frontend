@@ -3,10 +3,10 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './Components/Home'
 import Pagenotfound from './Components/pagenotfound'
 import Login from './Components/Login'
-import REgister from './Components/REgister'
 import Questions from './Components/Questions'
 import Feedback from './Components/Feedback'
 import { ToastContainer } from 'react-toastify'
+import Register from './Components/REgister'
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <Route  path='/' element ={<Home />} />
       <Route  path='*' element ={<Pagenotfound />} />
       <Route  path='/Login' element ={<Login />} />
-      <Route  path='/register' element ={<REgister />} />
+      <Route  path='/register' element ={<Register />} />
       <Route  path='/questions' element ={<Questions />} />
       <Route  path='/feedback' element ={<Feedback />} />
 
