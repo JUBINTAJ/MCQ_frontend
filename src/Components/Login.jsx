@@ -38,8 +38,9 @@ export default function Login() {
       toast.success("Login Successful");
       navigate("/questions"); 
     },
-    onError: () => {
-      toast.error("login wrong");
+    onError: (error) => {
+      const {message=`login wrong`}=error?.response?.data
+      toast.error(message);
     },
   });
 
