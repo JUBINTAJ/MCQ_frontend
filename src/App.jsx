@@ -6,7 +6,7 @@ import Login from './Components/Login'
 import Questions from './Components/Questions'
 import Feedback from './Components/Feedback'
 import { ToastContainer } from 'react-toastify'
-import Register from './Components/REgister'
+import Register from './Components/Register'
 
 function App() {
   return (
