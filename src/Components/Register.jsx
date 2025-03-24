@@ -26,6 +26,7 @@ export default function Register() {
   const register = useMutation({
     mutationFn: async (data) => {
       const res = await axiosinstance.post("user/signup", data);
+      console.log(res.data,'ppooo');
       return res.data;
     },
     onSuccess: () => {
@@ -34,8 +35,10 @@ export default function Register() {
         navigate("/login");
       }, 2000);
     },
-    onError: () => {
-      toast.error("Something went wrong");
+    onError: (error) => {
+      console.log(error,'looii');
+     const {message="Register wrong"}=error?.response?.data
+     toast.error(message)
     },
   });
 

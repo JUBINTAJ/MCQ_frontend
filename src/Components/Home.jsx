@@ -22,13 +22,14 @@ export default function Home() {
       </div>
 
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
-          Welcome to{" "}
-          <span className="relative inline-block">
-            <span className="relative z-10 px-2">TSEEP MASTERY BOX</span>
-            <span className="absolute left-0 right-0 bottom-1 h-[10px] bg-yellow-300 z-0 rounded-sm -mb-1"></span>
-          </span>
-        </h1>
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-gray-800 text-center">
+  Welcome to{" "}
+  <span className="relative inline-block">
+    <span className="relative z-10 px-2">TSEEP MASTERY BOX</span>
+    <span className="absolute left-0 right-0 bottom-0 sm:bottom-1 md:bottom-1.5 h-[4px] sm:h-[6px] md:h-[8px] bg-yellow-300 z-0 rounded-sm transition-all duration-300"></span>
+  </span>
+</h1>
+
         <p className="text-gray-600 text-xl">
           Unlock your potential with{" "}
           <span className="font-semibold">AI inspired tool</span>
